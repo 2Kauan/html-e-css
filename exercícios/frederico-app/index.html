@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frederico - Seu Robô Companheiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Olá, eu sou o Frederico!</h1>
+    <p>Sou seu robô companheiro e estou aqui para te ajudar em diversas tarefas.</p>
+
+    <div class="card">
+      <h2>Converse comigo</h2>
+      <div class="input-group">
+        <label for="userInput">Digite sua mensagem:</label>
+        <input type="text" id="userInput" placeholder="Como posso te ajudar hoje?" />
+      </div>
+      <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+
+    <div class="card">
+      <h2>Histórico de Conversa</h2>
+      <ul id="chat">
+        <li><strong>Você:</strong> Oi, Frederico!</li>
+        <li><strong>Frederico:</strong> Olá! Como posso te ajudar?</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Desenvolvido por Equipe FBIA | Todos os direitos reservados
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

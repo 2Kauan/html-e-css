@@ -1,0 +1,87 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 9, 134, 0.78);
+    padding: 20px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 2.5em;
+    color: black;
+}
+
+.descricao {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.botao:hover {
+    background-color: rgba(0, 9, 134, 0.78);
+    color: rgb(251, 251, 251);
+}
+
+/* Estilos da Página de Customização */
+.customizacao-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.opcoes button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: cyan;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcoes button:hover {
+    background-color: rgba(0, 9, 134, 0.78);
+    color: rgb(255, 255, 255);
+}
+
+.visualizacao {
+    margin-top: 20px;
+}
+
+.robo {
+    margin: 20px auto;
+    width: 200px;
+    height: 300px;
+    background-color: cyan;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.item-robo {
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}

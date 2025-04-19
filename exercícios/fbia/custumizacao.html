@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customização de Robô - FBIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Customização de Robô</h1>
+    </header>
+    <main>
+        <div class="customizacao-container">
+            <h2>Escolha os Acessórios</h2>
+            <div class="opcoes">
+                <button class="acessorio" onclick="adicionarAcessorio('chapéu')">Chapéu</button>
+                <button class="acessorio" onclick="adicionarAcessorio('óculos')">Óculos</button>
+                <button class="acessorio" onclick="adicionarAcessorio('camisa')">Camisa</button>
+                <button class="acessorio" onclick="adicionarAcessorio('calça')">Calça</button>
+            </div>
+            <div class="visualizacao">
+                <h3>Visualização do Robô</h3>
+                <div id="robo" class="robo">
+                    <!-- O robô será exibido aqui -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script >
+        function adicionarAcessorio(item) {
+            const robo = document.getElementById('robo');
+            const novoItem = document.createElement('div');
+            novoItem.textContent = item;
+            novoItem.classList.add('item-robo');
+            robo.appendChild(novoItem);
+            
+        }
+    </script>
+    <a href="index.html" class="botao">Voltar</a>
+</body>
+</html>

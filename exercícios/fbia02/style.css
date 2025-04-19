@@ -1,0 +1,24 @@
+
+body { margin: 0; padding: 0; background: #0d0d0d; color: white; font-family: sans-serif; overflow-x: hidden; }
+      
+      header { text-align: center; padding: 2rem; font-size: 2rem; font-weight: bold; background: linear-gradient(to right, #1e1e1e, #333); }
+      
+      .orbital-menu { position: relative; width: 100vw; height: 70vh; display: flex; justify-content: center; align-items: center; }
+      
+      .orbit { position: absolute; width: 300px; height: 300px; border: 2px dashed #555; border-radius: 50%; animation: spin 20s linear infinite; }
+      
+      .orbit:hover { animation-play-state: paused; }
+      
+      .menu-item { position: absolute; width: 100px; text-align: center; cursor: pointer; font-weight: bold; }
+      
+      .menu-item:nth-child(1) { top: -20px; left: 100px; } .menu-item:nth-child(2) { top: 100px; left: 220px; } .menu-item:nth-child(3) { bottom: -20px; left: 100px; } .menu-item:nth-child(4) { top: 100px; left: -20px; }
+      
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      
+      .content-section { display: none; padding: 2rem; }
+      
+      .content-section.active { display: block; }
+      
+      .customize-options img { width: 80px; margin: 10px; cursor: pointer; }
+      
+      .robot-preview { width: 200px; margin: auto; display: block; }
