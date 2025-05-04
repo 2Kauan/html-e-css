@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-body{
-    margin: 0px ;
+:root{
+
+}
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
 
 }
 
@@ -10,17 +18,15 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 45px;
-
 }
 
 header>h1{
-    margin: 0px;
-    font-size: 300%;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header>p{
-    margin: 3px;
+    padding-bottom: 50px;
 }
 header>p>a{
     color: white;
@@ -31,21 +37,30 @@ header>p>a:hover{
     text-decoration: underline;
 }
 
-.part1{
-    position: relative;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 
-    background-color: rgb(42, 89, 198);
+
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: black;
 
 }
-.part1>article{
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-
-    left: 50%;
-    top: 50%;
-    transform:translate( -95%,70%) ;
+section.imagem{
+    background-color: darkgray;
+    color: white;
 
 }
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.436);
+    width: 400px;
+}
+
+
 
 
 
@@ -55,4 +70,15 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+footer>p>a:hover{
+    text-decoration: underline;
+    
 }
